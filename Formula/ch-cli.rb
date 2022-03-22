@@ -12,8 +12,6 @@ class ChCli < Formula
   desc "Command-line interface for Sitecore Content Hub"
   homepage "https://github.com/Sitecore/content-hub-cli"
 
-  bottle :unneeded
-
   def install
     bin.install "ch-cli"
   end
