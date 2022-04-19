@@ -1,19 +1,20 @@
 class ChCli < Formula
-  version "1.0.0"
+  version "1.1.0"
 
   if OS.mac?
-    url "https://github.com/Sitecore/content-hub-cli/releases/download/1.0.0/ch-cli-osx-x64.1.0.0.zip"
-    sha256 "92ece1259511a24a3a2dc5105df814c588327a7045310062e6017322a8cd9f21"
+    url "https://github.com/Sitecore/content-hub-cli/releases/download/1.1.0/ch-cli-osx-x64.1.1.0.zip"
+    sha256 "f5b5c0c74a276a874411cf2299a9b9c70c46d212cc325a14ff4cbbff63c96e2b"
   elsif OS.linux?
-    url "https://github.com/Sitecore/content-hub-cli/releases/download/1.0.0/ch-cli-linux-x64.1.0.0.tar.gz"
-    sha256 "6cc78f3ef2d8cc2bd4c88f9d9b439375fc8ba881189c722237630029ae587232"
+    url "https://github.com/Sitecore/content-hub-cli/releases/download/1.1.0/ch-cli-linux-x64.1.1.0.tar.gz"
+    sha256 "13ba91ef9eeeca6fa431aea87b0b19e74bbc001b54d0b42e64de2a984bd574ec"
   end
 
   desc "Command-line interface for Sitecore Content Hub"
   homepage "https://github.com/Sitecore/content-hub-cli"
 
   def install
-    bin.install "ch-cli"
+    libexec.install Dir["*"]
+    bin.write_exec_script (libexec/"ch-cli")
   end
 
   test do
