@@ -1,12 +1,12 @@
 class ChCli < Formula
-  version "1.1.7"
+  version "1.1.8"
 
   if OS.mac?
-    url "https://github.com/Sitecore/content-hub-cli/releases/download/1.1.7/ch-cli-osx-x64.1.1.7.zip"
-    sha256 "72b9ba416175f73519b9a672d7b502cf9a9d683a954451c3bc76ced60e4b8a0d"
+    url "https://github.com/Sitecore/content-hub-cli/releases/download/1.1.8/ch-cli-osx-x64.1.1.8.zip"
+    sha256 "b2e5f7f8619c0fa2869151279182d97caa333c518782822e58cc1c2e20ca0027"
   elsif OS.linux?
-    url "https://github.com/Sitecore/content-hub-cli/releases/download/1.1.7/ch-cli-linux-x64.1.1.7.tar.gz"
-    sha256 "b7b13e6596fcea0859ae1266b0c5f24e899849ecfe66461f3f058a64031d271e"
+    url "https://github.com/Sitecore/content-hub-cli/releases/download/1.1.8/ch-cli-linux-x64.1.1.8.tar.gz"
+    sha256 "ac67aca17855d2e79730a52fe58ff0f43757447bb60fefa741a3d56b45031a4f"
   end
 
   desc "Command-line interface for Sitecore Content Hub"
