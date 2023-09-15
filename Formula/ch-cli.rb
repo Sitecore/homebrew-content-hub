@@ -1,4 +1,4 @@
-class ChOneCli < Formula
+class ChCli < Formula
   version "1.1.19"
 
   if OS.mac?
