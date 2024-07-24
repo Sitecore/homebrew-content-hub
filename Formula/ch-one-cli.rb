@@ -1,12 +1,12 @@
 class ChOneCli < Formula
-  version "2.0.1"
+  version "1.5.3"
 
   if OS.mac?
-    url "https://github.com/Sitecore/content-hub-one-cli/releases/download/2.0.1/ch-one-cli-osx-x64.2.0.1.zip"
-    sha256 "10ac6791d4990de5869709fd116c468b7ebde78eeeeb4fea88704d832389d6a0"
+    url "https://github.com/Sitecore/content-hub-one-cli/releases/download/1.5.3/ch-one-cli-osx-x64.1.5.3.zip"
+    sha256 "2a5abe46b77a20979220e29569065e7516789ddd173bbc16cf4f00b8c48485fd"
   elsif OS.linux?
-    url "https://github.com/Sitecore/content-hub-one-cli/releases/download/2.0.1/ch-one-cli-linux-x64.2.0.1.tar.gz"
-    sha256 "685e4d443076caa6b440d98663082e6295357de7c5032dedaa8ede4c2c2de0d4"
+    url "https://github.com/Sitecore/content-hub-one-cli/releases/download/1.5.3/ch-one-cli-linux-x64.1.5.3.tar.gz"
+    sha256 "267dc8516905658aa74f5850b4312eaa0683b1572ac9223b1d360441d7229e5a"
   end
 
   desc "A command-line interface (CLI) for interacting with Content Hub ONE"
